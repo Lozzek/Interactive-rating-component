@@ -1,0 +1,163 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ 
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Overpass', sans-serif;
+    background-color: #131518;
+
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+ 
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+ 
+input, button, textarea, select {
+    font: inherit;
+}
+ 
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+ 
+#root, #__next {
+    isolation: isolate;
+}
+
+/* Card */
+
+.card {
+    display: grid;
+    place-content: center;
+    background-color: #202730;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1.2rem;
+    max-width: 400px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.star {
+    background-color: #262E38;
+    border-radius: 18px;
+    padding: 10px;
+    width: 36px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.info {
+    font-weight: 400;
+    font-size: 14px;
+    color: #969FAD;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    color: #7C8798;
+}
+
+.numbers button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    color: #FFF;
+    background-color: #262E38;
+    cursor: pointer;
+}
+
+.numbers button:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #FC7614;
+}
+
+.numbers button:focus {
+    background-color: #7C8798;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    background-color: #FC7614;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: .6rem 8rem;
+    width: 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #FC7614;
+    background-color: #FFF;
+}
+
+.thankyou-card {
+    background-color: #202730;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.thankyou-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 15px;
+}
+
+.number-text {
+    background-color: #262E38;
+    border-radius: 20px;
+    color: #FC7614;
+    padding: .4rem 1rem;
+}
+
+.title-thankyou {
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #969FAD;
+
+    text-align: center;
+}
